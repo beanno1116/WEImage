@@ -1,0 +1,1 @@
+Javascript class used to manipulate images and image data.  
