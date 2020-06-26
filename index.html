@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+
+   
+
+
+    <script type="module" src="./WEImage.js"></script>
+
+
+    <script type="module">
+        import WEImage from "./WEImage.js";
+
+        // let img = document.getElementById('image');
+        // let canvas = document.getElementById('canvas');
+        // let context = canvas.getContext('2d');
+
+        
+
+        function detectFinished(mags,dirs){
+
+        }
+        
+
+        
+
+        window.onload = function(e){
+            
+            let image = new WEImage('img2.jpg');
+            let body = document.getElementsByTagName("body");            
+            image.insertImageInto(body[0]);
+
+            // image.invertColors();
+            // let tbl = image.imageTable();
+            
+            
+
+            let timeout;
+            timeout = setTimeout(function(){
+                // let pArr = image.pixelObjectArray();
+                // console.log(pArr);
+                // image.scaleImage(0.5);
+                // image.grayScale();                         
+                // image.threshold(64);
+                // image.loopPixels();
+
+                // let kX = [[-1,0,1],[-2,0,2],[-1,0,1]];
+                // let kY = [[-1,-2,-1],[0,0,0],[1,2,1]];
+                // let edgeKernels = {x:kX,y:kY};
+                // image.startEdgeDetect(edgeKernels,0);
+
+                // let k = [-1,-1,-1,-1, 8,-1,-1,-1,-1];
+                // let k2 = [0,0,0,0,1,0,0,0,0];
+                // let k3 = [1,1,1,1,0.7,-1,-1,-1,-1];
+                // let k4 = [0,1,0,-1,5,-1,0,1,0];
+                // let k5 = [0,-1,0,-1,5,-1,0,-1,0]; /* SHARPEN KERNEL */                
+                // let k6 = [1/9,1/9,1/9,1/9,1/9,1/9,1/9,1/9,1/9]; /* BOX BLUR KERNEL */                                
+                // let k7 = [1/256,4/256,6/256,4/256,1/256,4/256,16/256,24/256,16/256,4/256,6/256,24/256,36/256,24/256,6/256,4/256,16/256,24/256,16/256,4/256,1/256,4/256,6/256,4/256,1/256]; /* GAUSSIAN BLUR 5 X 5 KERNEL */
+                // let tmpArr = image.getFloat32Array(k7);
+                // image.convolve(tmpArr,false);
+                // image.rotate(90);
+
+                // image.addGradient(-16);
+                
+                // clearTimeout(timeout);
+                
+            },100);
+            
+            
+            
+
+        }
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>
